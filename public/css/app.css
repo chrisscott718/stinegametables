@@ -4154,7 +4154,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .d-none {
   display: none !important; }
 
-.d-inline {
+.d-inline, .nav-link {
   display: inline !important; }
 
 .d-inline-block {
@@ -6921,6 +6921,9 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+:root {
+  font-size: 16px; }
+
 #headerContainer {
   position: relative; }
   #headerContainer .header-row {
@@ -6934,3 +6937,13 @@ a.text-dark:focus, a.text-dark:hover {
 
 #buildYourOwnTable, #tableCollections {
   min-height: 100vh; }
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60px;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px; }
+  .navbar-brand img {
+    max-width: 100%; }
