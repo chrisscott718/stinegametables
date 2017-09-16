@@ -32,7 +32,46 @@
   margin: 0;
   padding: 0;
   flex: 0 0 60px;
-  img {
-    max-width: 100%;
+  font-size: 26px;
+}
+
+button.navbar-toggler {
+  background: none;
+  border: none;
+  position: relative;
+  padding-right: 2rem;
+  .menu-btn {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  span.top, span.bottom {
+    display: block;
+    background: #2d2d2d;
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    right: 0px;
+  }
+  span.top {
+    top: 6px;
+  }
+  span.bottom {
+    top: 14px;
+  }
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+// header styles
+.header-text {
+  animation-duration: 1s;
+  h1 {
+    strong {
+      font-weight: 800;
+    }
+  }
+  p.lead {
+    max-width: 50%;
   }
 }
