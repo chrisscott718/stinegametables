@@ -6920,3 +6920,17 @@ a.text-dark:focus, a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
+
+#headerContainer {
+  position: relative; }
+  #headerContainer .header-row {
+    min-height: calc(100vh - 40px); }
+  #headerContainer .header-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 500px;
+    z-index: -1; }
+
+#buildYourOwnTable, #tableCollections {
+  min-height: 100vh; }
