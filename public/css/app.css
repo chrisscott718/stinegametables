@@ -6938,6 +6938,9 @@ a.text-dark:focus, a.text-dark:hover {
 #buildYourOwnTable, #tableCollections {
   min-height: 100vh; }
 
+.navbar {
+  padding: 2rem 14rem; }
+
 .navbar-brand {
   margin: 0;
   padding: 0;
