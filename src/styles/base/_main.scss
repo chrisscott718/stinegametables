@@ -1,0 +1,17 @@
+#headerContainer {
+  position: relative;
+  .header-row {
+    min-height: calc(100vh - 40px);
+  }
+  .header-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 500px;
+    z-index: -1;
+  }
+}
+
+#buildYourOwnTable, #tableCollections {
+  min-height: 100vh;
+}
