@@ -78,9 +78,166 @@
           <h1 class="display-4">Build Your Own Table</h1>
         </div>
       </div>
-      <div class="row" id="JAVASCRIPTGOESHERE">
+      <div class="row" id="buildForm">
         <div class="col">
-          Options/contact form
+
+
+
+          <form id ="customBuildForm">
+            <!--  progress bar  -->
+            <ul id="progressbar">
+              <li>Table Shape</li>
+              <li>Arm Rest</li>
+              <li>Fabric</li>
+              <li>Chip Rack</li>
+              <li>Table Wood</li>
+              <li>Cups</li>
+              <li>Pedestal</li>
+              <li>Dining Top</li>
+            </ul>
+            <fieldset>
+              <h3 class="fs-title">The Shape</h3>
+              <h4 class="fs-subtitle">Choose a table shape</h4>
+              <label for="round">
+                Round <input type="radio" name="tableshape" id="round" value="round" />
+              </label>
+              <label for="oval">
+                Oval <input type="radio" name="tableshape" id="oval" value="oval" />
+              </label>
+              <label for="ellipse">
+                Ellipse <input type="radio" name="tableshape" id="ellipse" value="ellipse" />
+              </label>
+              <label for="octagon">
+                Octagon <input type="radio" name="tableshape" id="octagon" value="octagon" />
+              </label>
+              <input type="button" name="next" class="next" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h3 class="fs-title">The Arm Rest</h3>
+              <h4 class="fs-subtitle">Choose your arm rest fabic and color</h4>
+              <h5>Fabric Type</h5>
+              <label for="vinyl">
+                Vinyl <input type="radio" name="armtype" id="vinyl" value="vinyl" />
+              </label>
+              <label for="leather">
+                Leather <input type="radio" name="armtype" id="leather" value="leather" />
+              </label>
+              <h5>Color</h5>
+              <label for="acBlack">
+                Black <input type="radio" name="armcolor" id="acBlack" value="acBlack" />
+              </label>
+              <label for="acBrown">
+                Brown <input type="radio" name="armcolor" id="acBrown" value="acBrown" />
+              </label>
+              <label for="acBurgundy">
+                Burgundy <input type="radio" name="armcolor" id="acBurgundy" value="acBurgundy" />
+              </label>
+              <label for="acCustom">
+                Custom Color <input type="radio" name="armcolor" id="acCustom" value="acCustom" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h3 class="fs-title">The Fabric</h3>
+              <h4 class="fs-subtitle">Choose a fabric color</h4>
+              <label for="fcBlack">
+                Black <input type="radio" name="fabriccolor" id="fcBlack" value="fcBlack" />
+              </label>
+              <label for="fcBurgundy">
+                Burgundy <input type="radio" name="fabriccolor" id="fcBurgundy" value="fcBurgundy" />
+              </label>
+              <label for="fcBrown">
+                Brown <input type="radio" name="fabriccolor" id="fcBrown" value="fcBrown" />
+              </label>
+              <label for="fcGreen">
+                Green <input type="radio" name="fabriccolor" id="fcGreen" value="fcGreen" />
+              </label>
+              <label for="fcBlue">
+                Blue <input type="radio" name="fabriccolor" id="fcBlue" value="fcBlue" />
+              </label>
+              <label for="fcCustom">
+                Custom Color <input type="radio" name="fabriccolor" id="fcCustom" value="fcCustom" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h3 class="fs-title">The Rack</h3>
+              <h4 class="fs-subtitle">Choose your custom chip rack style</h4>
+              <label for="crGrooved">
+                Grooved <input type="radio" name="chiprack" id="crGrooved" value="crGrooved" />
+              </label>
+              <label for="crFlat">
+                Flat <input type="radio" name="chiprack" id="crFlat" value="crFlat" />
+              </label>
+              <label for="crNoCups">
+                No Cup Holders <input type="radio" name="chiprack" id="crNoCups" value="crNoCups" />
+              </label>
+              <label for="crCupsOnly">
+                Only Cup Holders <input type="radio" name="chiprack" id="crCupsOnly" value="crCupsOnly" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h3 class="fs-title">The Wood</h3>
+              <h4 class="fs-subtitle">Choose your wood type and stain</h4>
+              <h5>Wood Type</h5>
+              <label for="wtMahogany">
+                Mahogany <input type="radio" name="woodtype" id="wtMahogany" value="wtMahogany" />
+              </label>
+              <label for="wtCherry">
+                Cherry <input type="radio" name="woodtype" id="wtCherry" value="wtCherry" />
+              </label>
+              <label for="wtWalnut">
+                Walnut <input type="radio" name="woodtype" id="wtWalnut" value="wtWalnut" />
+              </label>
+              <h5>Wood Stain</h5>
+              <label for="wsMahogany">
+                Mahogany Stain<input type="radio" name="woodstain" id="wsMahogany" value="wsMahogany" />
+              </label>
+              <label for="wsCherry">
+                Cherry Stain <input type="radio" name="woodstain" id="wsCherry" value="wsCherry" />
+              </label>
+              <label for="wsWalnut">
+                Walnut Stain <input type="radio" name="woodstain" id="wsWalnut" value="wsWalnut" />
+              </label>
+              <label for="wsBlack">
+                Black Stain <input type="radio" name="woodstain" id="wsBlack" value="wsBlack" />
+              </label>
+              <label for="wsClear">
+                Clear Coat <input type="radio" name="woodstain" id="wsClear" value="wsClear" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h3 class="fs-title">The Cups</h3>
+              <h4 class="fs-subtitle">Choose a cup color</h4>
+              <label for="ctSteel">
+                Stainless Steel <input type="radio" name="cuptype" id="ctSteel" value="ctSteel" />
+              </label>
+              <label for="ctBrass">
+                 Brass <input type="radio" name="cuptype" id="ctBrass" value="ctBrass" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
+            </fieldset>
+          </form>
+          <!-- -pedestal - claw, reed, new pedestal (the one we made that I showed you.  Needs a name).  Also we                   are going to be able to make some out of stainless steel.  Just havent made any yet.
+          -dining table cover - round, rectangle, octagon, ellipse, custom shapes and sizes available -->
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <div class="col">
           Large iamge view
