@@ -58,6 +58,7 @@ section {
     font-size: 3rem;
     font-weight: bolder;
     color: $gray-900;
+    cursor: pointer;
     &:nth-child(2) {
       animation-delay: 0.15s;
     }

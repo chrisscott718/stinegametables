@@ -6969,7 +6969,8 @@ section .display-4 {
     display: none;
     font-size: 3rem;
     font-weight: bolder;
-    color: #212529; }
+    color: #212529;
+    cursor: pointer; }
     #navbarNav .nav-link-lg:nth-child(2) {
       -webkit-animation-delay: 0.15s;
               animation-delay: 0.15s; }
