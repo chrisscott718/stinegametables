@@ -17,44 +17,46 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light fixed-top">
-    <a class="navbar-brand" href="#">STINE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-light fixed-top animated fadeIn">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.svg" class="img-fluid" />
+    </a>
+    <button class="navbar-toggler navToggle" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-btn">
         MENU
         <span class="icon top"></span>
         <span class="icon bottom"></span>
       </span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Build your own</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Collections</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">contact</a>
-        </li>
-      </ul>
+    <div class="animated fadeIn" id="navbarNav">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="navToggle navClose animated fadeIn">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="row align-items-end justify-content-end">
+        <div class="col">
+          <a class="nav-link-lg animated fadeInUp" href="#">Build Your Own</a>
+          <a class="nav-link-lg animated fadeInUp" href="#">Collections</a>
+          <a class="nav-link-lg animated fadeInUp" href="#">Gallery</a>
+          <a class="nav-link-lg animated fadeInUp" href="#">About</a>
+          <a class="nav-link-lg animated fadeInUp" href="#">Contact</a>
+        </div>
+      </div>
     </div>
   </nav>
   <header id="headerContainer">
     <div class="container">
       <div class="row align-items-center header-row">
         <div class="col-md-8">
-          <div class="header-text animated fadeInUp">
-            <h1 class="display-3 text-uppercase"><strong>Your poker table </strong></h1>
-            <h2 class="display-3 text-uppercase">Redefined</h2>
-            <p class="text-secondary lead">Precisely what you imagined your poker table could be, only so much more.</p>
-            <div>
+          <div class="header-text">
+            <h1 class="display-3 text-uppercase animated fadeInUp"><strong>Your poker table </strong></h1>
+            <h2 class="display-3 text-uppercase animated fadeInUp">Redefined</h2>
+            <p class="text-secondary lead animated fadeIn">Precisely what you imagined your poker table could be, only so much more.</p>
+            <div class="sub-text animated fadeIn">
               <span class="py-4">Call us  <strong>(800) 897-1189</strong></span>
               <button type="button" class="btn btn-outline-dark btn-lg ml-3">Learn More</button>
             </div>
@@ -63,7 +65,7 @@
       </div>
       <div class="row">
         <div class="col text-center py-3 animated fadeInUp">
-          <h6>SEE MORE</h6>
+          <h6 class="small-head">SEE MORE</h6>
         </div>
       </div>
     </div>
@@ -96,22 +98,64 @@
           <h1 class="display-4">Collections</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col">
-          Images for collections
+          <nav class="nav nav-tabs" id="collectionsTabs" role="tablist">
+            <div class="nav-item-group">
+              <a class="nav-item nav-link active" id="nav-black-label-tab" data-toggle="tab" href="#nav-black-label" role="tab" aria-controls="nav-black-label" aria-expanded="true">
+                <div class="nav-thumb">
+                  <img src="./img/collection-temp-thumb.png" class="rounded-circle img-thumbnail"/>
+                  Black Label
+                </div>
+              </a>
+              <a class="nav-item nav-link" id="nav-green-label-tab" data-toggle="tab" href="#nav-green-label" role="tab" aria-controls="nav-green-label">
+                <div class="nav-thumb">
+                  <img src="./img/collection-temp-thumb.png" class="rounded-circle img-thumbnail" />
+                  Green Label
+                </div>
+              </a>
+            </div>
+          </nav>
         </div>
-        <div class="col">
-          <div class="table-descriptions">
-            <h1>Black Label</h1>
-            <p class="lead">
-              Stine Game tables provides two different unique collections of tables.
-              Our black label tables are fully customizable from the chip rack to the pedestal.
-              Whether you’re looking for your own personal custom poker table or want a high-end
-              poker table for your business establishment, you can rest assured knowing that all
-              Stine game tables are built specifically with you in mind.
-            </p>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-black-label" role="tabpanel" aria-labelledby="nav-black-label-tab">
+          <div class="row align-items-center">
+            <div class="col">
+              <img class="img-fluid" src="./img/collection-temp.png" />
+            </div>
+            <div class="col">
+              <div class="table-descriptions">
+                <h1>Black Label</h1>
+                <p class="lead">
+                  Stine Game tables provides two different unique collections of tables.
+                  Our black label tables are fully customizable from the chip rack to the pedestal.
+                  Whether you’re looking for your own personal custom poker table or want a high-end
+                  poker table for your business establishment, you can rest assured knowing that all
+                  Stine game tables are built specifically with you in mind.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>Thumbnails go here</div>
+        </div>
+        <div class="tab-pane fade" id="nav-green-label" role="tabpanel" aria-labelledby="nav-green-label-tab">
+          <div class="row align-items-center">
+            <div class="col">
+              <img class="img-fluid" src="./img/collection-temp.png" />
+            </div>
+            <div class="col">
+              <div class="table-descriptions">
+                <h1>Green Label</h1>
+                <p class="lead">
+                  Stine Game tables provides two different unique collections of tables.
+                  Our black label tables are fully customizable from the chip rack to the pedestal.
+                  Whether you’re looking for your own personal custom poker table or want a high-end
+                  poker table for your business establishment, you can rest assured knowing that all
+                  Stine game tables are built specifically with you in mind.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -197,8 +241,8 @@
       ©2004-2015 Stine Game Tables. All Rights Reserved.
     </div>
   </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
