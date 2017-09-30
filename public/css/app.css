@@ -7090,6 +7090,83 @@ button.navbar-toggler {
   color: white;
   min-height: 100vh; }
 
+#customBuildForm {
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  #customBuildForm fieldset {
+    border: none;
+    padding: 1.25rem;
+    width: 90%;
+    position: absolute; }
+    #customBuildForm fieldset:not(:first-of-type) {
+      display: none; }
+  #customBuildForm input[type=radio] {
+    display: none; }
+
+.fs-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem; }
+
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem; }
+
+#progressbar {
+  counter-reset: step;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 100; }
+  #progressbar li {
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    width: 12.5%;
+    float: left;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+    #progressbar li:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 20px;
+      line-height: 20px;
+      display: block;
+      font-size: 0.5rem;
+      background: rgba(255, 255, 255, 0.65);
+      border-radius: 50%;
+      margin: 0 auto 5px auto;
+      color: black;
+      text-align: center;
+      -webkit-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+      z-index: 10; }
+    #progressbar li:after {
+      content: '';
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      left: -50%;
+      top: 9px;
+      z-index: -1;
+      -webkit-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out; }
+    #progressbar li:first-child:after {
+      content: none; }
+    #progressbar li.active {
+      color: #007bff; }
+      #progressbar li.active:before {
+        background: #007bff;
+        color: white; }
+      #progressbar li.active:after {
+        width: 100%;
+        background: #007bff; }
+
 #collectionsTabs {
   border: none; }
   #collectionsTabs .nav-item {
