@@ -1,0 +1,106 @@
+#buildYourOwnTable {
+  background: $gray-900;
+  color: white;
+  min-height: 100vh;
+}
+
+#customBuildForm {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 300px;
+  fieldset {
+    border: none;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    .options-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      input[type=button] {
+        flex: 0 0 50%;
+      }
+      label.option-label {
+        border: solid 1px $gray-400;
+      }
+    }
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
+  input[type=radio] {
+    display: none;
+  }
+}
+
+.fs-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.8;
+}
+
+#progressbar {
+  counter-reset: step;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+  li {
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    width: 12.5%;
+    float: left;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    &:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 20px;
+      line-height: 20px;
+      display: block;
+      font-size: 0.5rem;
+      background: white;
+      border-radius: 50%;
+      margin: 0 auto 5px auto;
+      color: black;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      z-index: 10;
+    }
+    &:after {
+      content: '';
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      left: -50%;
+      top: 9px;
+      z-index: -1;
+      transition: all 0.2s ease-in-out;
+    }
+    &:first-child:after {
+      content: none;
+    }
+    &.active {
+      color: $blue;
+      &:before {
+        background: $blue;
+        color: white;
+      }
+      &:after {
+        width: 100%;
+        background: $blue;
+      }
+    }
+  }
+}
