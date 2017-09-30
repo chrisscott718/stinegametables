@@ -210,12 +210,27 @@
               <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
             </fieldset>
             <fieldset>
-              <h3 class="fs-title">Extra</h3>
+              <h3 class="fs-title">Dining Top</h3>
               <h4 class="fs-subtitle">Would you like a dining top for your table?</h4>
               <input type="radio" name="diningTop" id="yesDining" value="yesDining" />
               <label for="yesDining">Yes, I would like a dining top</label>
               <input type="radio" name="diningTop" id="noDining" value="noDining" />
               <label for="noDining">No, Thank you</label>
+              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
+              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
+            </fieldset>
+            <fieldset>
+              <h3 class="fs-title">Request Your Quote</h3>
+              <h4 class="fs-subtitle">Fill in your information below and we'll contact you with a quote</h4>
+              <div class="form-group">
+                <label for="name">Email address<span class="text-danger">*</span></label>
+                <input required type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Your email...">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="message">Anything else we should know?</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message here..."></textarea>
+              </div>
               <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
               <input type="button" name="submit" class="submit btn btn-lg btn-primary" value="Submit" />
             </fieldset>
