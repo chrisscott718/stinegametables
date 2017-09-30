@@ -6,13 +6,15 @@
 
 #customBuildForm {
   width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   position: relative;
-  min-height: 500px;
+  min-height: 300px;
   fieldset {
     border: none;
     width: 100%;
     position: absolute;
+    text-align: center;
     .options-container {
       display: flex;
       justify-content: space-between;
