@@ -7224,7 +7224,13 @@ button.navbar-toggler {
       border-width: 2px; }
 
 #contactStine {
-  min-height: 100vh; }
+  min-height: 90vh; }
+
+.contact-lead {
+  text-align: center; }
 
 #aboutStineGameTables {
   min-height: 100vh; }
+
+footer {
+  min-height: 10vh; }
