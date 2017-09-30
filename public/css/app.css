@@ -7093,12 +7093,32 @@ button.navbar-toggler {
 #customBuildForm {
   width: 100%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  min-height: 500px; }
   #customBuildForm fieldset {
     border: none;
-    padding: 1.25rem;
-    width: 90%;
+    width: 100%;
     position: absolute; }
+    #customBuildForm fieldset .options-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      #customBuildForm fieldset .options-container input[type=button] {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%; }
+      #customBuildForm fieldset .options-container label.option-label {
+        border: solid 1px #ced4da; }
     #customBuildForm fieldset:not(:first-of-type) {
       display: none; }
   #customBuildForm input[type=radio] {
