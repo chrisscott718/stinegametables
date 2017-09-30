@@ -52,19 +52,11 @@
     <div class="container">
       <div class="row align-items-center header-row">
         <div class="col-md-8">
-<<<<<<< HEAD
-          <div class="header-text animated fadeInUp">
-            <h1 class="display-3 text-uppercase"><strong>Your poker table </strong></h1>
-            <h2 class="display-3 text-uppercase">Redefined</h2>
-            <p class="text-secondary lead">Precisely what you imagined, only so much more.</p>
-            <div>
-=======
           <div class="header-text">
             <h1 class="display-3 text-uppercase animated fadeInUp"><strong>Your poker table </strong></h1>
             <h2 class="display-3 text-uppercase animated fadeInUp">Redefined</h2>
             <p class="text-secondary lead animated fadeIn">Precisely what you imagined your poker table could be, only so much more.</p>
             <div class="sub-text animated fadeIn">
->>>>>>> 6d4785bc4d6f225d23e9d5cfcae357e6ea65faaf
               <span class="py-4">Call us  <strong>(800) 897-1189</strong></span>
               <button type="button" class="btn btn-outline-dark btn-lg ml-3">Learn More</button>
             </div>
@@ -86,157 +78,174 @@
           <h1 class="display-4">Build Your Own Table</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <!--  progress bar  -->
-          <ul id="progressbar">
-            <li class="active">Table Shape</li>
-            <li>Arm Rest</li>
-            <li>Fabric</li>
-            <li>Chip Rack</li>
-            <li>Table Wood</li>
-            <li>Cups</li>
-            <li>Pedestal</li>
-            <li>Dining Top</li>
-          </ul>
-        </div>
-      </div>
       <div class="row" id="buildForm">
         <div class="col">
 
 
+
           <form id ="customBuildForm">
+            <!--  progress bar  -->
+            <ul id="progressbar">
+              <li>Table Shape</li>
+              <li>Arm Rest</li>
+              <li>Fabric</li>
+              <li>Chip Rack</li>
+              <li>Table Wood</li>
+              <li>Cups</li>
+              <li>Pedestal</li>
+              <li>Dining Top</li>
+            </ul>
             <fieldset>
               <h3 class="fs-title">The Shape</h3>
               <h4 class="fs-subtitle">Choose a table shape</h4>
-              <input type="radio" name="tableshape" id="round" value="round" />
-              <label for="round">Round </label>
-              <input type="radio" name="tableshape" id="oval" value="oval" />
-              <label for="oval">Oval </label>
-              <input type="radio" name="tableshape" id="ellipse" value="ellipse" />
-              <label for="ellipse">Ellipse </label>
-              <input type="radio" name="tableshape" id="octagon" value="octagon" />
-              <label for="octagon">Octagon </label>
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button" value="Next" />
+              <label for="round">
+                Round <input type="radio" name="tableshape" id="round" value="round" />
+              </label>
+              <label for="oval">
+                Oval <input type="radio" name="tableshape" id="oval" value="oval" />
+              </label>
+              <label for="ellipse">
+                Ellipse <input type="radio" name="tableshape" id="ellipse" value="ellipse" />
+              </label>
+              <label for="octagon">
+                Octagon <input type="radio" name="tableshape" id="octagon" value="octagon" />
+              </label>
+              <input type="button" name="next" class="next" value="Next" />
             </fieldset>
             <fieldset>
               <h3 class="fs-title">The Arm Rest</h3>
               <h4 class="fs-subtitle">Choose your arm rest fabic and color</h4>
               <h5>Fabric Type</h5>
-              <input type="radio" name="armtype" id="vinyl" value="vinyl" />
-              <label for="vinyl">Vinyl</label>
-              <input type="radio" name="armtype" id="leather" value="leather" />
-              <label for="leather">Leather</label>
+              <label for="vinyl">
+                Vinyl <input type="radio" name="armtype" id="vinyl" value="vinyl" />
+              </label>
+              <label for="leather">
+                Leather <input type="radio" name="armtype" id="leather" value="leather" />
+              </label>
               <h5>Color</h5>
-              <input type="radio" name="armcolor" id="acBlack" value="acBlack" />
-              <label for="acBlack">Black</label>
-              <input type="radio" name="armcolor" id="acBrown" value="acBrown" />
-              <label for="acBrown">Brown</label>
-              <input type="radio" name="armcolor" id="acBurgundy" value="acBurgundy" />
-              <label for="acBurgundy">Burgundy</label>
-              <input type="radio" name="armcolor" id="acCustom" value="acCustom" />
-              <label for="acCustom">Custom Color</label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
+              <label for="acBlack">
+                Black <input type="radio" name="armcolor" id="acBlack" value="acBlack" />
+              </label>
+              <label for="acBrown">
+                Brown <input type="radio" name="armcolor" id="acBrown" value="acBrown" />
+              </label>
+              <label for="acBurgundy">
+                Burgundy <input type="radio" name="armcolor" id="acBurgundy" value="acBurgundy" />
+              </label>
+              <label for="acCustom">
+                Custom Color <input type="radio" name="armcolor" id="acCustom" value="acCustom" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
             </fieldset>
             <fieldset>
               <h3 class="fs-title">The Fabric</h3>
               <h4 class="fs-subtitle">Choose a fabric color</h4>
-              <input type="radio" name="fabriccolor" id="fcBlack" value="fcBlack" />
-              <label for="fcBlack">Black</label>
-              <input type="radio" name="fabriccolor" id="fcBurgundy" value="fcBurgundy" />
-              <label for="fcBurgundy">Burgundy</label>
-              <input type="radio" name="fabriccolor" id="fcBrown" value="fcBrown" />
-              <label for="fcBrown">Brown</label>
-              <input type="radio" name="fabriccolor" id="fcGreen" value="fcGreen" />
-              <label for="fcGreen">Green</label>
-              <input type="radio" name="fabriccolor" id="fcBlue" value="fcBlue" />
-              <label for="fcBlue">Blue</label>
-              <input type="radio" name="fabriccolor" id="fcCustom" value="fcCustom" />
-              <label for="fcCustom">Custom Color</label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
+              <label for="fcBlack">
+                Black <input type="radio" name="fabriccolor" id="fcBlack" value="fcBlack" />
+              </label>
+              <label for="fcBurgundy">
+                Burgundy <input type="radio" name="fabriccolor" id="fcBurgundy" value="fcBurgundy" />
+              </label>
+              <label for="fcBrown">
+                Brown <input type="radio" name="fabriccolor" id="fcBrown" value="fcBrown" />
+              </label>
+              <label for="fcGreen">
+                Green <input type="radio" name="fabriccolor" id="fcGreen" value="fcGreen" />
+              </label>
+              <label for="fcBlue">
+                Blue <input type="radio" name="fabriccolor" id="fcBlue" value="fcBlue" />
+              </label>
+              <label for="fcCustom">
+                Custom Color <input type="radio" name="fabriccolor" id="fcCustom" value="fcCustom" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
             </fieldset>
             <fieldset>
               <h3 class="fs-title">The Rack</h3>
               <h4 class="fs-subtitle">Choose your custom chip rack style</h4>
-              <input type="radio" name="chiprack" id="crGrooved" value="crGrooved" />
-              <label for="crGrooved">Grooved </label>
-              <input type="radio" name="chiprack" id="crFlat" value="crFlat" />
-              <label for="crFlat">Flat </label>
-              <input type="radio" name="chiprack" id="crNoCups" value="crNoCups" />
-              <label for="crNoCups">No Cup Holders </label>
-              <input type="radio" name="chiprack" id="crCupsOnly" value="crCupsOnly" />
-              <label for="crCupsOnly">Only Cup Holders </label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
+              <label for="crGrooved">
+                Grooved <input type="radio" name="chiprack" id="crGrooved" value="crGrooved" />
+              </label>
+              <label for="crFlat">
+                Flat <input type="radio" name="chiprack" id="crFlat" value="crFlat" />
+              </label>
+              <label for="crNoCups">
+                No Cup Holders <input type="radio" name="chiprack" id="crNoCups" value="crNoCups" />
+              </label>
+              <label for="crCupsOnly">
+                Only Cup Holders <input type="radio" name="chiprack" id="crCupsOnly" value="crCupsOnly" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
             </fieldset>
             <fieldset>
               <h3 class="fs-title">The Wood</h3>
               <h4 class="fs-subtitle">Choose your wood type and stain</h4>
               <h5>Wood Type</h5>
-              <input type="radio" name="woodtype" id="wtMahogany" value="wtMahogany" />
-              <label for="wtMahogany">Mahogany </label>
-              <input type="radio" name="woodtype" id="wtCherry" value="wtCherry" />
-              <label for="wtCherry">Cherry </label>
-              <input type="radio" name="woodtype" id="wtWalnut" value="wtWalnut" />
-              <label for="wtWalnut">Walnut </label>
+              <label for="wtMahogany">
+                Mahogany <input type="radio" name="woodtype" id="wtMahogany" value="wtMahogany" />
+              </label>
+              <label for="wtCherry">
+                Cherry <input type="radio" name="woodtype" id="wtCherry" value="wtCherry" />
+              </label>
+              <label for="wtWalnut">
+                Walnut <input type="radio" name="woodtype" id="wtWalnut" value="wtWalnut" />
+              </label>
               <h5>Wood Stain</h5>
-              <input type="radio" name="woodstain" id="wsMahogany" value="wsMahogany" />
-              <label for="wsMahogany">Mahogany Stain</label>
-              <input type="radio" name="woodstain" id="wsCherry" value="wsCherry" />
-              <label for="wsCherry">Cherry Stain </label>
-              <input type="radio" name="woodstain" id="wsWalnut" value="wsWalnut" />
-              <label for="wsWalnut">Walnut Stain </label>
-              <input type="radio" name="woodstain" id="wsBlack" value="wsBlack" />
-              <label for="wsBlack">Black Stain </label>
-              <input type="radio" name="woodstain" id="wsClear" value="wsClear" />
-              <label for="wsClear">Clear Coat </label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
+              <label for="wsMahogany">
+                Mahogany Stain<input type="radio" name="woodstain" id="wsMahogany" value="wsMahogany" />
+              </label>
+              <label for="wsCherry">
+                Cherry Stain <input type="radio" name="woodstain" id="wsCherry" value="wsCherry" />
+              </label>
+              <label for="wsWalnut">
+                Walnut Stain <input type="radio" name="woodstain" id="wsWalnut" value="wsWalnut" />
+              </label>
+              <label for="wsBlack">
+                Black Stain <input type="radio" name="woodstain" id="wsBlack" value="wsBlack" />
+              </label>
+              <label for="wsClear">
+                Clear Coat <input type="radio" name="woodstain" id="wsClear" value="wsClear" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
             </fieldset>
             <fieldset>
               <h3 class="fs-title">The Cups</h3>
               <h4 class="fs-subtitle">Choose a cup color</h4>
-              <input type="radio" name="cuptype" id="ctSteel" value="ctSteel" />
-              <label for="ctSteel">Stainless Steel</label>
-              <input type="radio" name="cuptype" id="ctBrass" value="ctBrass" />
-              <label for="ctBrass">Brass</label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
-            </fieldset>
-            <fieldset>
-              <h3 class="fs-title">The Pedestal</h3>
-              <h4 class="fs-subtitle">Choose a pedestal style</h4>
-              <input type="radio" name="pedestal" id="pClaw" value="pClaw" />
-              <label for="pClaw">Claw</label>
-              <input type="radio" name="pedestal" id="pReed" value="pReed" />
-              <label for="pReed">Reed</label>
-              <input type="radio" name="pedestal" id="pExecutive" value="pExecutive" />
-              <label for="pExecutive">Executive</label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="next" class="next btn btn-lg btn-outline-light next action-button"  value="Next" />
-            </fieldset>
-            <fieldset>
-              <h3 class="fs-title">Extra</h3>
-              <h4 class="fs-subtitle">Would you like a dining top for your table?</h4>
-              <input type="radio" name="diningTop" id="yesDining" value="yesDining" />
-              <label for="yesDining">Yes, I would like a dining top</label>
-              <input type="radio" name="diningTop" id="noDining" value="noDining" />
-              <label for="noDining">No, Thank you</label>
-              <input type="button" name="previous" class="previous btn btn-lg btn-outline-secondary action-btn" value="Previous" />
-              <input type="button" name="submit" class="submit btn btn-lg btn-primary" value="Submit" />
+              <label for="ctSteel">
+                Stainless Steel <input type="radio" name="cuptype" id="ctSteel" value="ctSteel" />
+              </label>
+              <label for="ctBrass">
+                 Brass <input type="radio" name="cuptype" id="ctBrass" value="ctBrass" />
+              </label>
+              <input type="button" name="previous" class="previous" value="Previous" />
+              <input type="button" name="next" class="next" value="Next" />
             </fieldset>
           </form>
+          <!-- -pedestal - claw, reed, new pedestal (the one we made that I showed you.  Needs a name).  Also we                   are going to be able to make some out of stainless steel.  Just havent made any yet.
+          -dining table cover - round, rectangle, octagon, ellipse, custom shapes and sizes available -->
+
+
+
+
+
+
+
+
+
+
 
         </div>
         <div class="col">
           Large iamge view
         </div>
       </div>
-      <!-- <div class="row align-items-center">
+      <div class="row align-items-center">
         <div class="col">Inventory</div>
-      </div> -->
+      </div>
     </div>
   </section>
   <section id="tableCollections">
