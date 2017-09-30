@@ -7191,8 +7191,6 @@ button.navbar-toggler {
         background: #007bff; }
 
 #tableCollections {
-  background: #212529;
-  color: white;
   min-height: 100vh; }
 
 #collectionsTabs {
