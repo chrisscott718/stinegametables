@@ -1,6 +1,3 @@
-button {
-  cursor: pointer; }
-
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -1595,7 +1592,7 @@ pre {
   font-size: 1rem;
   line-height: 1.25;
   color: #495057;
-  background-color: #fff;
+  background-color: #F5F5F5;
   background-image: none;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -1607,7 +1604,7 @@ pre {
     border: 0; }
   .form-control:focus {
     color: #495057;
-    background-color: #fff;
+    background-color: #F5F5F5;
     border-color: #80bdff;
     outline: none; }
   .form-control::-webkit-input-placeholder {
@@ -1630,7 +1627,7 @@ select.form-control:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px); }
 select.form-control:focus::-ms-value {
   color: #495057;
-  background-color: #fff; }
+  background-color: #F5F5F5; }
 
 .form-control-file,
 .form-control-range {
@@ -2770,7 +2767,7 @@ tbody.collapse.show {
     outline: none; }
     .custom-select:focus::-ms-value {
       color: #495057;
-      background-color: #fff; }
+      background-color: #F5F5F5; }
   .custom-select:disabled {
     color: #868e96;
     background-color: #e9ecef; }
@@ -7025,8 +7022,10 @@ section .display-4 {
     outline: none;
     background: #e9ecef; }
 
+button {
+  cursor: pointer; }
+
 button.navbar-toggler {
-  cursor: pointer;
   background: none;
   border: none;
   position: relative;
@@ -7233,8 +7232,12 @@ button.navbar-toggler {
 .contact-lead {
   text-align: center; }
 
+.contact-form {
+  margin-top: .5rem;
+  padding-top: 2.5rem; }
+
 #aboutStineGameTables {
   min-height: 100vh; }
 
 footer {
-  min-height: 10vh; }
+  min-height: 5vh; }
