@@ -1,5 +1,14 @@
 #aboutStineGameTables {
   // background: $gray-900;
   // color: white;
-  min-height: 100vh;
+  padding: 8rem 0;
+  position: relative;
+  #aboutImg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    height: 400px;
+    margin-top: -200px;
+  }
 }
