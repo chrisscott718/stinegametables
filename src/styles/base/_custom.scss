@@ -1,6 +1,5 @@
-// Grays
 $dark-gray:     #151617;
-
+$light-gray:    #F5F5F5;
 
 $border-radius: 0.15rem;
 
@@ -8,7 +7,14 @@ $btn-border-radius:              $border-radius;
 $btn-border-radius-lg:           $border-radius;
 $btn-border-radius-sm:           $border-radius;
 
-
 $font-size-base: 1rem;
 $font-size-lg:   1rem;
 $font-size-sm:   1rem;
+
+$input-bg:                       $light-gray;
+// $input-btn-border-width:         0;
+
+
+// background-color: #f5f5f5;
+// border: none;
+// padding: 1rem;
